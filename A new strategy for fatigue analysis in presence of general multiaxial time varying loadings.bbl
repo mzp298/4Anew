@@ -1,0 +1,41 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Maitournam2011232}
+M.~Maitournam, C.~Krebs, A.~Galtier,
+  \href{http://www.sciencedirect.com/science/article/pii/S0142112310001933}{A
+  multiscale fatigue life model for complex cyclic multiaxial loading},
+  International Journal of Fatigue 33~(2) (2011) 232 -- 240.
+\newblock \href
+  {http://dx.doi.org/http://dx.doi.org/10.1016/j.ijfatigue.2010.08.017}
+  {\path{doi:http://dx.doi.org/10.1016/j.ijfatigue.2010.08.017}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0142112310001933}
+
+\bibitem{Bosia201239}
+S.~Bosia, A.~Constantinescu,
+  \href{http://www.sciencedirect.com/science/article/pii/S0142112312002162}{Fast
+  time-scale average for a mesoscopic high cycle fatigue criterion},
+  International Journal of Fatigue 45 (2012) 39 -- 47.
+\newblock \href
+  {http://dx.doi.org/http://dx.doi.org/10.1016/j.ijfatigue.2012.06.015}
+  {\path{doi:http://dx.doi.org/10.1016/j.ijfatigue.2012.06.015}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0142112312002162}
+
+\bibitem{zepeng}
+M.~Zepeng, Structures under multiaxial fatigue taking consideration of
+  gradients of the constraints with time and space variation.
+
+\bibitem{lemaitre1990mechanics}
+J.~Lemaitre, J.-L. Chaboche, Mechanics of solid materials, Cambridge university
+  press, 1990.
+
+\bibitem{legendre}
+{Legendre Gauss Quadrature weights and nodes},
+  \url{https://www.mathworks.com/matlabcentral/fileexchange/4540-legendre-gauss-quadrature-weights-and-nodes},
+  accessed: 2004-05-11.
+
+\end{thebibliography}

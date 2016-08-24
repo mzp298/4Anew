@@ -1,0 +1,21 @@
+\BOOKMARK [1][-]{section.1}{Weakening\040scales\040and\040yield\040function}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{The\040concept\040of\040weakening\040scales}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Distribution\040of\040weakening\040scales}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Yield\040function\040with\040mean\040stress\040effect}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Local\040plastic\040model}{section.1}% 5
+\BOOKMARK [1][-]{section.2}{Construction\040of\040an\040energy\040based\040fatigue\040approach}{}% 6
+\BOOKMARK [1][-]{section.3}{Nonlinearity\040of\040damage\040accumulation}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Energy\040approach\040with\040Chaboche\040law}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Generalized\040damage\040accumulation}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Loop\040on\040time\040and\040scales}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Integration\040rules\040for\040\040and\040D}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Regime\040determination\040under\040multiple\040scales}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Test\040on\040different\040load\040histories}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{One\040dimensional\040application\040to\040simple\040cyclic\040data}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{One\040dimensional\040application\040to\040PSA\040data}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Multi-dimensional\040application\040to\040PSA\040data}{section.5}% 16
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 17
+\BOOKMARK [1][-]{Item.6}{Reference}{}% 18
+\BOOKMARK [1][-]{Item.6}{Appendices}{}% 19
+\BOOKMARK [1][-]{Appendix .A}{DETAILED\040EXPLOITATION}{}% 20
+\BOOKMARK [1][-]{Appendix .B}{MATLAB\040CODE\040LISTING}{}% 21
