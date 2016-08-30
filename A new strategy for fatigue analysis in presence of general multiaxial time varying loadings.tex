@@ -248,7 +248,7 @@ Fatigue; Energy; High cycle; Plasticity; Mean stress
 \section{Weakening scales and yield function}
 \subsection{The concept of weakening scales} 
 
-We follow the Dan Van paradigm. The structure is elastic at the macroscopic scale. At each material points, there is a stochastic distribution of weak points which will undergo strong plastic yielding, without contributing to the overall macroscopic stress. From a microscopic point of view, there is a distribution of weakening scales, namely $s\in[1,\infty)$. Let $S_{max}$ be the macroscopic stress intensity at present time. Let $\sigma_y$ be the yield limit before weakening. Then we imagine that for a given scale $s$:
+We follow the Dang Van paradigm. The structure is elastic at the macroscopic scale. At each material points, there is a stochastic distribution of weak points which will undergo strong plastic yielding, without contributing to the overall macroscopic stress. From a microscopic point of view, there is a distribution of weakening scales, namely $s\in[1,\infty)$. Let $S_{max}$ be the macroscopic stress intensity at present time. Let $\sigma_y$ be the yield limit before weakening. Then we imagine that for a given scale $s$:
 
 \vspace{6pt}
 \noindent
@@ -313,7 +313,7 @@ behavior at the mesoscopic scale. The mesoscopic evolution equations are thus:
 		\begin{equation}
 		\dot{\uline{\uline{b}}}(s,M,t)=\dfrac{kE}{E-k} \dot{\uline{\uline{\varepsilon}}}^p(s,M,t), 
 		\end{equation}
-		which is our isotropic kinematic hardening model.
+		which is our kinematic hardening model.
 		\begin{equation}
 		\dot{\uline{\uline{\varepsilon}}}^p(s,M,t)=\gamma\dfrac{\partial f(s,M,t)}{\partial \uline{\uline{S}}}, 
 		\end{equation}
@@ -531,7 +531,7 @@ We replace $\gamma$ deduced from Eq.\eqref{gamma} in Eq.\eqref{w} to give the ex
 \label{dW}
 \end{equation}
 
-With Eq.\eqref{allscalerate}, the final expression of energy dissipation W during time step dt writes:
+With Eq.\eqref{allscalerate}, the final expression of energy dissipation $W$ during time step $dt$ writes:
 
 \begin{equation}
   \begin{split}
@@ -698,7 +698,7 @@ The force on wheel is firstly considered as under uniaxial loading $F_x$. Here w
 
 
 
-In the load history, when $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}>\sigma_y$, the damage accumulates. However, under scale $s_{10}$, there are much less damage accumulation than under scale $s_1$. In this way we do not neglect the small influences in load history and the big fluctuation in stress is magnified which reflects the real situation.
+In the load history, when $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}>\sigma_y$, the damage accumulates. However, under scale $s_{8}$, there are much less damage accumulation than under scale $s_1$.  In this way we do not neglect the small influences in load history and the big fluctuation in stress is magnified which reflects the real situation. 
 
 %\iffalse
 The damage evolves like in \figref{dam3d}. 
@@ -733,8 +733,8 @@ We can improve the result by inserting more arithmetic sequence points between e
  
 \clearpage
 \section{Discussion}
-
-The strategy can be made more complex by introducing a local space averaging process in the calculation of the local damage, and by taking more general plastic flows. The energy based fatigue approach takes into account impurities and hardness in the material which affect the fatigue life. The load sequence effects for complex multiaxial loading history are included in damage accumulation process. The small step-by-step strategy does not ignore small fluctuations in the load history. In addition, it can take into account any type of micro plasticity law and multiaxial load geometry.
+We work on the stress tensor directly in 3D analysis in stead of using the multidimensional equivalent stress.
+The strategy can be made more complex by introducing a local space averaging process in the calculation of the local damage, and by taking more general plastic flows. The energy based fatigue approach takes into account impurities and hardness in the material and is applicable to any type of micro plasticity law and multiaxial load geometry. The small step-by-step strategy does not ignore small fluctuations in the load history. 
 
 Further research of energy based failure criteria should be focused on the following aspects:
 \begin{enumerate}
