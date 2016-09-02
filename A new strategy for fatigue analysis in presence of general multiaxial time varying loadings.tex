@@ -574,11 +574,11 @@ The test is first performed on a sinusoidal axial load $\Sigma=Csin(t)$ with par
 		\label{Sin}
 \end{table}
 
-We use matlab to realize our analytical method. We plot $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}$ and $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)$ for two different scales($s_1=21.21657929229650$ and $s_8=2.176132808422946$) in \figref{trialsin}.
+We use matlab to realize our analytical method. We plot $\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\|_{trial}$ and $\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\|$ for two different scales($s_1=21.21657929229650$ and $s_8=2.176132808422946$) in \figref{trialsin}.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=\textwidth]{figures//trialsin.png} 
-	\caption{Microscopic $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}$ and $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)$ evolution with time under different weakening scales in sinusoidal load}
+	\caption{Microscopic $\left(  \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}$ and $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)$ evolution with time under different weakening scales in sinusoidal load}
 	\label{trialsin}
 \end{figure}
 
@@ -621,18 +621,18 @@ In this test, we reconstruct a unidimensional macroscopic stress history from re
 
 The sample recording rate is 256 per second. In order to accumulate damage using very small steps, we have created 10 additional points between every 2 recorded points by linear interpolation. So the sample rate is $256*10$ per second. 
 
-The force on wheel is firstly considered as under uniaxial loading $F_x$. Here we temporally set $\Sigma_x=F_x/A$ where $A=\dfrac{1}{1e6} m^2$ is the area of force, and $W_F=3e6 J$. The other data are as Table.\ref{Sin}. The plot of $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}$ and $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)$ under 2 different scales($s_1=21.21657929229650$ and $s_8=2.176132808422946$)are shown in \figref{trialreal}. The damage evolves like \figref{damage1d}.
+The force on wheel is firstly considered as under uniaxial loading $F_x$. Here we temporally set $\Sigma_x=F_x/A$ where $A=\dfrac{1}{1e6} m^2$ is the area of force, and $W_F=3e6 J$. The other data are as Table.\ref{Sin}. The plot of $\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\|_{trial}$ and $\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\|$ under 2 different scales($s_1=21.21657929229650$ and $s_8=2.176132808422946$)are shown in \figref{trialreal}. The damage evolves like \figref{damage1d}.
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=\textwidth]{figures//trialreal1d1.png} 
-	\caption{$\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}$ and $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)$ evolution with time under different weakening scales in PSA load history}
+	\caption{$\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\|_{trial}$ and $\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\|$ evolution with time under different weakening scales in PSA load history}
 	\label{trialreal}
 \end{figure}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=\textwidth]{figures//trialreal1d2.png} 
-	\caption{Circled area magnification in \figref{trialreal} where there is more $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}>\sigma_y$(plasticity)  at $s_1$ than at $s_8$}
+	\caption{Circled area magnification in \figref{trialreal} where there is more $\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\|_{trial}>\sigma_y$(plasticity)  at $s_1$ than at $s_8$}
 	\label{trialreal1d2}
 \end{figure}
 \begin{figure}[!h]
@@ -688,17 +688,17 @@ The force on wheel is firstly considered as under uniaxial loading $F_x$. Here w
 
  
  
- The plot of $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}$ and $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)$ under 2 different scales are shown in \figref{trialreal3d}.
+ The plot of $\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\|_{trial}$ and $\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\|$ under 2 different scales are shown in \figref{trialreal3d}.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=\textwidth]{figures//trialreal3d.png} 
-	\caption{$\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}$ and $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)$ evolution with time under different weakening scales in PSA load history}
+	\caption{$\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\|_{trial}$ and $\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\|$ evolution with time under different weakening scales in PSA load history}
 	\label{trialreal3d}
 \end{figure} 
 
 
 
-In the load history, when $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}>\sigma_y$, the damage accumulates. However, under scale $s_{8}$, there are much less damage accumulation than under scale $s_1$.  In this way we do not neglect the small influences in load history and the big fluctuation in stress is magnified which reflects the real situation. 
+In the load history, when $\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\|_{trial}>\sigma_y$, the damage accumulates. However, under scale $s_{8}$, there are much less damage accumulation than under scale $s_1$.  In this way we do not neglect the small influences in load history and the big fluctuation in stress is magnified which reflects the real situation. 
 
 %\iffalse
 The damage evolves like in \figref{dam3d}. 
