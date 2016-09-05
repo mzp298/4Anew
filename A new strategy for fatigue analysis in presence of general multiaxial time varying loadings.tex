@@ -221,7 +221,6 @@ Fatigue; Energy; High cycle; Plasticity; Mean stress
 			$N$& current number of cycles &  &  &  \\
 			$N_F$& number of cycles to failure &  &  &  \\
 			 $ \dot{\varepsilon}_p$ & rate of effective plastic strain &  &  &  \\
-			 $\dot{p}$ & accumulated plastic strain rate given as $\sqrt{\frac{2}{3}}||\dot{\varepsilon}_p||$ &  &  &  \\
 			$W_F$ & dissipated energy to failure per unit volume &  &  &  \\
 			$E$ & Young's modulus &  &  &  \\
 			$k=500\sim800MPa$ & hardening parameter &  &  &  \\
@@ -231,8 +230,8 @@ Fatigue; Energy; High cycle; Plasticity; Mean stress
 			$a$ & material parameter from Chaboche law &  &  &  \\
 			$\sigma_{y}$ & macroscopic yield stress(normal or shear) &  &  &  \\
 			$\lambda=0\sim5$& hydrostatic pressure sensitivity &  &  &  \\
-			$dev\dot{\uline{\uline{\Sigma}}}$ & deviatoric part of the stress tensor &  &  &  \\
-			$\Sigma_H=P$& macroscopic hydrostatic pressure &  &  &  \\
+			$\uline{\uline{S}}=dev\dot{\uline{\uline{\Sigma}}}$ & deviatoric part of the stress tensor &  &  &  \\
+			$\Sigma_H$& macroscopic hydrostatic pressure &  &  &  \\
 			$A_{\uppercase\expandafter{\romannumeral2}}=\tau_{oct,a}=\sqrt{\dfrac{1}{3}J_{2,a}}$& the amplitude of octahedral shear stress &  &  &  \\
 			$S_{max}=\sigma_{VM}=\sqrt{6J_{2,a}}$& Von Mises stress &  &  &  \\
 			$s_{-1}$& tensile fatigue limit for $R=-1$  &  &  &  \\
@@ -242,8 +241,6 @@ Fatigue; Energy; High cycle; Plasticity; Mean stress
 \end{flushleft}
 
 \clearpage
-
-
 
 \section{Weakening scales and yield function}
 \subsection{The concept of weakening scales} 

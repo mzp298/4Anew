@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014/W32TeX) (preloaded format=xelatex 2015.4.2)  2 SEP 2016 16:04
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014/W32TeX) (preloaded format=xelatex 2015.4.2)  5 SEP 2016 12:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1501,7 +1501,7 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 ) [1
 
 ]
-Overfull \hbox (50.37456pt too wide) in paragraph at lines 213--241
+Overfull \hbox (50.37456pt too wide) in paragraph at lines 213--240
 [][] 
  []
 
@@ -1524,23 +1524,23 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [5] [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 417.
+(hyperref)                removing `math shift' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 417.
+(hyperref)                removing `math shift' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 417.
+(hyperref)                removing `math shift' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\delta' on input line 417.
+(hyperref)                removing `\delta' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 417.
+(hyperref)                removing `math shift' on input line 416.
 
 [7] [8] [9] [10]
 File: figures//trialsin.png Graphic file (type QTm)
@@ -1675,27 +1675,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 783.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 782.
 
 [40]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 783.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 782.
 
 (./A new strategy for fatigue analysis in presence of general multiaxial time v
 arying loadings.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 783.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 783.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 782.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 782.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 783.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 782.
  ) 
 Here is how much of TeX's memory you used:
- 28089 strings out of 493734
- 484316 string characters out of 6149469
- 769063 words of memory out of 5000000
- 31037 multiletter control sequences out of 15000+600000
+ 28091 strings out of 493734
+ 484339 string characters out of 6149469
+ 773063 words of memory out of 5000000
+ 31039 multiletter control sequences out of 15000+600000
  53587 words of font info for 191 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  42i,20n,51p,10508b,1735s stack positions out of 5000i,500n,10000p,200000b,80000s
