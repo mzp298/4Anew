@@ -358,7 +358,7 @@ In phase 1, a direct analysis yields the energy dissipation at scale $s$:
 
 A similar analysis yields $$dW(phase 1)=dW(phase 5)=\dfrac{1}{2}dW(phase 3).$$
 
-We can then calculate  the local dissipated energy $W$  at point $M$ during one cycle by cumulating the input of all sub-scales with their probabilities \cite{zepeng}.
+We can then calculate  the local dissipated energy $W$  at point $M$ during one cycle by cumulating the input of all sub-scales which result in plastic regime with their probabilities \cite{zepeng}.
 \begin{equation}
 \begin{split}
 W_{cyc}&=4\int_{\left( \sigma_y-\lambda \Sigma_H\right) /S_{max}}^{\infty}dW(s,M,t)P(s)ds
@@ -408,7 +408,7 @@ But the notion of cycle itself may be hard to identify for general loadings. The
 In a general loading case, $\dot{W}$ is to be computed. By integrating Eq.\eqref{dissipated} over all microscales, we get:
 \begin{equation}\dot{W}(M,t)=\int_{s=1}^{\infty}\dot{w}(s,M,t)P(s)ds=\int_{s=1}^{\infty}\left(\uuline{S}-\uuline{b} \right) (s,M,t):\uuline{\dot{\varepsilon}^p}(s,M,t)P(s)ds.\label{Wdot}
 \end{equation}
-The evolution of $\uuline{S}$, $\uuline{b}$ and $\uuline{\dot{\varepsilon}^p}$ are given in section 1.4. Equation \eqref{dt} and \eqref{Wdot} are therefore our proposed damage law.
+The evolution of $\uuline{S}$, $\uuline{b}$ and $\uuline{\dot{\varepsilon}}^p$ are given in section 1.4. Equation \eqref{dt} and \eqref{Wdot} are therefore our proposed damage law.
 
 \section{Loop on time and scales}
 \subsection{Integration rules for $\dot{W}$ and $\delta D$}
@@ -447,7 +447,7 @@ So the dissipated energy rate integrated over all scales takes the form of Eq.\e
 \dot{W}=\frac{1}{2}\int_{-1}^{1}\dot{w}\left[  \left( \frac{x+1}{2}\right) ^{\frac{1}{1-\beta}},t\right] dx\approx\frac{1}{2}\sum_{i}\omega_id\dot{w}\left[  \left( \frac{x_i+1}{2}\right) ^{\frac{1}{1-\beta}},t\right],
 \label{allscalerate}
 \end{equation}
-where $\omega_i$ and $x_i$ are respectively the weights and nodes of the Gauss Legerndre integration rule used for the numerical integration. In this work, we used 25 points\cite{legendre}.
+where $\omega_i$ and $x_i$ are respectively the weights and nodes of the Gauss Legendre integration rule used for the numerical integration. In this work, we used 25 points\cite{legendre}.
 
 After changing the integration limit, $\left( \dfrac{x+1}{2}\right) ^{\frac{1}{1-\beta}}$ represents the weakening scale $s$. 
 
@@ -477,7 +477,7 @@ $\dot{\uline{\uline{\varepsilon}}}^p=0$, $\dot{\uline{\uline{b}}}=0$ and $\dot{\
 $$\dot{\uline{\uline{S}}}-\dot{\uline{\uline{b}}}=dev\dot{\uline{\uline{\Sigma}}},$$ 
 yielding
 \begin{equation}
-\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t+dt)=\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t)+dev\dot{\uline{\uline{\Sigma}}}dt:=\left(  \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}(s,t+dt).
+\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t+dt)=\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t)+dev\dot{\uline{\uline{\Sigma}}}dt:=\left(  \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}(t+dt).
 \label{trial}
 \end{equation}
 We are in elastic regime at scale $s$ as long as we satisfy
@@ -565,7 +565,7 @@ The test is first performed on a sinusoidal axial load $\Sigma=Csin(t)$ with par
 		Initial damage                                              & $D=0$                          \\
 		Initial time                                                & $t=0$ s                            \\
 		Dissipated energy to failure per unit volume                & $W_F=3e6$ J                       \\
-		Looping step                                           & 1 s              \\ \hline
+		Looping step                                           & 1e-4 s              \\ \hline
 	\end{tabular}
 		\caption{Material parameters in a simple cyclic load }
 		\label{Sin}
@@ -581,7 +581,7 @@ We use matlab to realize our analytical method. We plot $\left\|  \uline{\uline{
 
 The nonlinearity is determined by 
 $$\alpha=1 - a\left\langle \dfrac{\max\limits_{t}\sqrt{J_{2,a}}(t)+a_c{P_{max}(t)}-b_c}{ \sigma_{u} - 2\max\sqrt{J_{2,a}}}\right\rangle,$$ 
- which is predominated by Crossland criterion, for simplicity we take $\alpha$ as a constant. The damage evolves like in \figref{damsin}, where we compare the damage evolution as predicted by the cycle accumulation Eq.\eqref{eq:w} and by the numerical strategy of section 4.
+ which is predominated by a certain fatigue criterion, for simplicity we take $\alpha$ as a constant. The damage evolves like in \figref{damsin}, where we compare the damage evolution as predicted by the cycle accumulation Eq.\eqref{eq:w} and by the numerical strategy of section 4.
 
 \begin{figure}[!h]
 	\centering
