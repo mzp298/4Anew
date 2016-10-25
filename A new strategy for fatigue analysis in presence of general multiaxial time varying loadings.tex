@@ -183,7 +183,7 @@
 %% Text of abstract
 The object of this paper is to propose an energy based fatigue approach which handles multidimensional time varying loading histories.
 
-Our fundamental thought is to assume that the energy dissipated at small scales governs fatigue at failure. The basis of our model is to consider a plastic behavior at the mesoscopic scale with a dependence of the yield function not only on the deviatoric part of the stress but also on the hydro static part. A kinematic hardening under the assumptions of associative plasticity is also considered. We also follow the Dang Van paradigm at macro scale. The structure is elastic at the macroscopic scale. At each material points, there is a stochastic distribution of weak points which will undergo strong plastic yielding, which contribute to energy dissipation without affecting the overall macroscopic stress.
+Our fundamental thought is to assume that the energy dissipated at small scales governs fatigue at failure. The basis of our model is to consider a plastic behavior at the mesoscopic scale with a dependence of the yield function not only on the deviatoric part of the stress but also on the hydrostatic part. A kinematic hardening under the assumption of associative plasticity is also considered. We also follow the Dang Van paradigm at macro scale. The structure is elastic at the macroscopic scale. At each material points, there is a stochastic distribution of weak points which will undergo strong plastic yielding, which contribute to energy dissipation without affecting the overall macroscopic stress.
 
 Instead of using the number of cycles, we use the concept of loading history. To accommodate real life loading history more accurately, mean stress effect is taken into account in mesoscopic yield function and non-linear damage accumulation law are also considered in our model. Fatigue will then be determined from the plastic shakedown cycle and from a phenomenological fatigue law linking lifetime and accumulated mesoscopic plastic dissipation.
  
@@ -444,7 +444,7 @@ if we set $u=\dfrac{x+1}{2}$.
 
 So the dissipated energy rate integrated over all scales takes the form of Eq.\eqref{allscalerate}:
 \begin{equation}
-\dot{W}=\frac{1}{2}\int_{-1}^{1}\dot{w}\left[  \left( \frac{x+1}{2}\right) ^{\frac{1}{1-\beta}},t\right] dx\approx\frac{1}{2}\sum_{i}\omega_id\dot{w}\left[  \left( \frac{x_i+1}{2}\right) ^{\frac{1}{1-\beta}},t\right],
+\dot{W}=\frac{1}{2}\int_{-1}^{1}\dot{w}\left[  \left( \frac{x+1}{2}\right) ^{\frac{1}{1-\beta}},t\right] dx\approx\frac{1}{2}\sum_{i}\omega_i\dot{w}\left[  \left( \frac{x_i+1}{2}\right) ^{\frac{1}{1-\beta}},t\right],
 \label{allscalerate}
 \end{equation}
 where $\omega_i$ and $x_i$ are respectively the weights and nodes of the Gauss Legendre integration rule used for the numerical integration. In this work, we used 25 points\cite{legendre}.
@@ -511,7 +511,7 @@ $$\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial} (s,t+dt)=\left( \uli
  
 Knowing the distinction between elastic and plastic regime under multiple scales, we compute the general expression of the dissipated energy rate.
 \begin{equation}
-\dot{w}=\left( \uline{\uline{S}}-\uline{\uline{b}}\right) :\dot{\uline{\uline{\varepsilon}}}^p=\gamma\dfrac{ \sigma_y-\lambda \Sigma_H}{s}.
+\dot{w}(s)=\left( \uline{\uline{S}}-\uline{\uline{b}}\right) :\dot{\uline{\uline{\varepsilon}}}^p=\gamma\dfrac{ \sigma_y-\lambda \Sigma_H}{s}.
 \label{w}
 \end{equation}
 
@@ -524,7 +524,7 @@ where $\langle$ $\rangle$ is Macaulay bracket symbol defined as $\langle m\rangl
 
 We replace $\gamma$ deduced from Eq.\eqref{gamma} in Eq.\eqref{w} to give the expression of local energy dissipation rate at scale $s$:
 \begin{equation}
-\dot{w}dt=\dfrac{(E-k)(1+\nu) }{E(E+k\nu)}\left\langle  \left| \left|\uline{\uline{S}}-\uline{\uline{b}}\right| \right|_{trial}-\dfrac{\sigma_y-\lambda \Sigma_H}{s}\right\rangle \dfrac{\sigma_y-\lambda \Sigma_H}{s}.
+\dot{w}(s)dt=\dfrac{(E-k)(1+\nu) }{E(E+k\nu)}\left\langle  \left| \left|\uline{\uline{S}}-\uline{\uline{b}}\right| \right|_{trial}-\dfrac{\sigma_y-\lambda \Sigma_H}{s}\right\rangle \dfrac{\sigma_y-\lambda \Sigma_H}{s}.
 \label{dW}
 \end{equation}
 
